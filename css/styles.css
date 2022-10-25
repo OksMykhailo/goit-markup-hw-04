@@ -1,0 +1,506 @@
+/*цвет основного текста #212121*/
+/*вторичный цвет текста #757575/
+/*белый #FFFFFF*/
+/*акцент #2196F3*/
+
+:root {
+  --primary-text-color:#757575;
+  --title-text-color:#212121;
+  --accent-color:#2196F3;
+  --primary-white-color:#FFFFFF;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    background: var(--primary-white-color);
+    color: var(--primary-text-color);
+    letter-spacing: 0.03em;
+    
+  
+}
+
+.section {
+    padding-top: 94px;
+    
+}
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+
+
+
+
+.box {
+    display: flex;
+    align-items: center;
+    
+}
+
+h1,h2,h3,p {
+    margin-top: 0;
+}
+
+
+
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;}
+
+
+       /*HEADER*/
+
+.page-header {
+    
+    border-bottom: 1px solid #EEEEEE;
+}
+
+.logo-header {
+    margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    font-family:'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    color: #000;
+    text-decoration: none; 
+    
+}
+.logo-color {
+    font-family:'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    color: var(--accent-color);
+}
+
+  /*site-nav*/
+
+.site-nav {
+    display: flex;
+}
+
+
+
+.site-nav .item-nav + .item-nav {
+    margin-left: 50px;
+}
+
+/*.site-nav .item-nav:not(:last-child) {
+margin-right: 50px;
+} */
+
+
+
+.site-nav .link{
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    color: var(--title-text-color);
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    
+ 
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus  {
+    color: var(--accent-color);
+}
+
+.site-nav .link.current {
+    color: var(--accent-color);
+}
+
+
+
+/*contacts*/
+
+.contacts-link {
+    display: flex;
+    margin-left: auto;
+}
+
+.contacts-link .item-nav + .item-nav {
+    margin-left: 50px;
+}
+
+.contacts-link a {
+    
+    color: var(--primary-text-color);
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    
+    }
+
+.contacts-link a:hover,
+.contacts-link a:focus {
+    color: var(--accent-color);
+}
+
+/* main */
+
+/*hero*/
+
+.hero {
+    height: 600px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #2F303A;
+    margin: 0;
+    
+
+    
+     }
+
+.hero-title {
+   
+   
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    width: 696px;
+
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: var(--primary-white-color);
+    }
+
+.hero-btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+    border-radius: 4px;
+    min-width: 216px;
+    height: 50px;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 0.06em;
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    border: none;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+    color: var(--primary-white-color);
+    background-color: #188CE8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+
+/*Наші Переваги*/
+
+.list {
+    display: flex;
+    gap: 30px;
+}
+
+.list-item {
+    width: calc((100%-90px)/4);
+    
+}
+
+/*.list .list-item + .list-item {
+    margin-left: 30px;
+}*/
+
+.list-caption {
+    margin-top: 0;
+    margin-bottom: 10px;
+    
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.14;
+    color: var(--title-text-color);
+}
+
+.list-text {
+    
+    margin-bottom: 0;
+    
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--primary-text-color);
+}
+
+/*Чим ми займаємося*/
+
+.heading {
+    
+    margin-bottom: 0;
+    padding-bottom: 50px;
+    
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    color: var(--title-text-color);
+}
+
+/*Наша команда*/
+
+.comand {
+
+    margin-top: 94px;
+    background-color: #F5F4FA;
+}
+
+.img-list {
+    display: flex;
+}
+
+.img-list .img-items:not(:last-child){
+   margin-right: 30px;
+}
+   
+
+.img-item {
+    
+    
+    text-align: center;
+    background: var(--primary-white-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+/*.items .img-item + .img-item {
+    margin-left: 30px;
+}*/
+
+
+.items {
+    padding-bottom: 94px;
+    display: flex;
+    gap: 30px;
+}
+
+.items-caption {
+    
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.14;
+    color: var(--title-text-color);
+}
+
+.items-text {
+    
+    margin-bottom: 0;
+    font-size: 16px;
+    line-height: 1.71;
+    color: var(--primary-text-color);
+
+    
+}
+
+.team {
+ padding-top:30px;
+ padding-bottom: 30px;
+}
+
+/*PORTFOLIO*/
+
+.btn {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.btn .item-btn + .item-btn {
+    margin-left: 8px;
+}
+
+.btn-portfolio {
+    padding: 6px 22px;
+
+    border-radius: 4px;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--title-text-color);
+    background-color: #F5F4FA;
+    border: none;
+    
+}
+
+.btn .btn-portfolio:hover,
+.btn .btn-portfolio:focus {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+    cursor: pointer;
+    border: none;
+    box-shadow: 0px 3px 1px rgb(0 0 0 / 10%), 0px 1px 2px rgb(0 0 0 / 8%), 0px 2px 2px rgb(0 0 0 / 12%);
+    
+}
+
+.item {
+    display: flex;
+    flex-wrap: wrap;
+    gap:30px;
+    padding-bottom: 94px;
+}
+
+/*.item-list {
+    border: 1px solid #EEEEEE;
+    width: 370px;
+    text-align: center;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}*/
+
+.item-list {
+    /*width: calc((100% - 60px) / 3);*/
+    flex-grow: 1;
+    
+    
+}
+
+.item-list:nth-child(3n) {
+    margin-right: 0;
+}
+
+.item-list:nth-last-child(-n +3 ){
+    margin-bottom: 0;
+}
+
+.item a {
+    
+    text-decoration: none;
+}
+
+.subject {
+    
+    margin-bottom: 0;
+    
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--title-text-color);
+}
+
+.desc {
+   
+    margin-top: 4px;
+    margin-bottom: 0;
+    
+    font-size: 16px;
+    line-height: 1.87;
+    color: var(--primary-text-color);
+}
+
+.border {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
+    border-left: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+    
+}
+ 
+img {
+    display: block;
+}
+
+
+/*footer*/
+
+.footer-page {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    height: 252px;
+    background-color: #2F303A;
+}
+
+
+
+   .btm {
+   
+   } 
+    
+    
+
+.logo-footer {
+    display: block;
+    margin-bottom: 20px;
+    font-family:'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    color: var(--primary-white-color);
+    text-decoration: none; 
+ 
+}
+
+ .contact-link .list-contact:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.contact-link  {
+    
+    
+}
+
+.contact-link a {
+    font-style: normal;
+    text-decoration: none;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: rgba(255, 255, 255, 0.6);
+
+}
+
+.contact-link a:hover,
+.contact-link a:focus {
+    color: var(--accent-color);
+}
+.color-contact {
+    color: var(--primary-white-color);
+}
+
+.color-contact:hover,
+.color-contact:focus {
+    color: var(--accent-color);
+}
