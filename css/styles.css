@@ -146,6 +146,7 @@ margin-right: 50px;
 
 .contacts-link {
     display: flex;
+    align-items: center;
     margin-left: auto;
 }
 
@@ -195,7 +196,7 @@ margin-right: 50px;
 
 .hero {
     min-height: 600px;
-    min-width: 1600px;
+    max-width: 1600px;
 
     background-image: linear-gradient(
         to right,
@@ -333,7 +334,8 @@ margin-right: 50px;
 /*Наша команда*/
 .icon-link {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 10px;
     
 }
 
