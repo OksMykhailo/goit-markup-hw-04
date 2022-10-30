@@ -265,6 +265,10 @@ margin-right: 50px;
 }
 
 
+.doing {
+    padding-top: 0;
+}
+
 /*Наші Переваги*/
 .thumb {
     display: flex;
